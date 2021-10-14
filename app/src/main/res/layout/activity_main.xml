@@ -10,19 +10,17 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="287dp"
         android:text="A"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button4"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:text="B"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="98dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
